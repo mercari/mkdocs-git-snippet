@@ -1,4 +1,0 @@
-black
-bumpversion
-mock
-pytest

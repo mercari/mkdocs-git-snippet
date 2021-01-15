@@ -2,12 +2,9 @@
 dep:
 	pip install -r requirements.txt
 
-.PHONY: dep-dev
-dep-dev: dep
-	pip install -r requirements-dev.txt
-
 .PHONY: bump
 bump:
+	pip install bumpversion
 	bumpversion $(v)
 
 .PHONY: test
