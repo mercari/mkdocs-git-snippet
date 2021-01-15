@@ -1,8 +1,8 @@
-# mkdocs-git-snippet [![CircleCI][circleci-badge]][circleci] [![Code style: black][black-badge]][black]
+# mkdocs-git-snippet [![test ][test-badge]][test] [![Code style: black][black-badge]][black]
 
 <!-- badge links -->
-[circleci]: https://circleci.com/gh/mercari/mkdocs-git-snippet/tree/main
-[circleci-badge]: https://circleci.com/gh/mercari/mkdocs-git-snippet/tree/main.svg?style=svg&circle-token=
+[test-badge]: https://github.com/mercari/mkdocs-git-snippet/workflows/test/badge.svg
+[test]: https://github.com/mercari/mkdocs-git-snippet/actions?query=workflow%3A%22test%22
 [black-badge]: https://img.shields.io/badge/code%20style-black-000000.svg
 [black]: https://github.com/psf/black
 
