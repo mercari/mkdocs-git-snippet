@@ -1,4 +1,4 @@
-# mkdocs-git-snippet [![Python package][test-badge]][test] [![Code style: black][black-badge]][black]
+# mkdocs-git-snippet [![test ][test-badge]][test] [![Code style: black][black-badge]][black]
 
 <!-- badge links -->
 [test-badge]: https://github.com/mercari/mkdocs-git-snippet/workflows/test/badge.svg
