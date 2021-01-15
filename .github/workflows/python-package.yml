@@ -27,7 +27,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest mock black
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        make dep
     - name: Lint with black
       run: |
         black --check --diff .
@@ -39,4 +39,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest
+        make test
