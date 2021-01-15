@@ -10,11 +10,11 @@ Mkdocs Plugin for snippet from git repository.
 
 ## Installation
 
-You can install using pip from mercari's JFrog
-
 ```shell
-pip install mkdocs-git-snippet
+python setup.py install
 ```
+
+This package is not available from pypi now. We are working on that.
 
 ## Configuration
 
