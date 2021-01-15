@@ -1,8 +1,8 @@
-# mkdocs-git-snippet [![test][test-badge]][test] [![Code style: black][black-badge]][black]
+# mkdocs-git-snippet [![Python package][test-badge]][test] [![Code style: black][black-badge]][black]
 
 <!-- badge links -->
-[test-badge]: https://github.com/mercari/mkdocs-git-snippet/workflows/Python%20package/badge.svg
-[test]: https://github.com/mercari/mkdocs-git-snippet/actions?query=workflow%3A%22Python+package%22
+[test-badge]: https://github.com/mercari/mkdocs-git-snippet/workflows/test/badge.svg
+[test]: https://github.com/mercari/mkdocs-git-snippet/actions?query=workflow%3A%22test%22
 [black-badge]: https://img.shields.io/badge/code%20style-black-000000.svg
 [black]: https://github.com/psf/black
 
