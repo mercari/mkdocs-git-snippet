@@ -18,7 +18,7 @@ def generate_install_requires() -> List[str]:
         required = f.read().splitlines()
 
     # Remove comments
-    return list(filter(lambda x: not x.startswith('#'), required))
+    return list(filter(lambda x: not x.startswith("#"), required))
 
 
 setup(
@@ -28,14 +28,12 @@ setup(
     author="Mercari",
     author_email="",
     url="https://github.com/mercari/mkdocs-git-snippet",
-    python_requires='>=3.5',
+    python_requires=">=3.5",
     install_requires=generate_install_requires(),
     packages=find_packages(),
     zip_safe=False,
     include_package_data=True,
     entry_points={
-        'mkdocs.plugins': [
-            'git-snippet = mkdocs_git_snippet.plugin:GitSnippetPlugin'
-        ]
-    }
+        "mkdocs.plugins": ["git-snippet = mkdocs_git_snippet.plugin:GitSnippetPlugin"]
+    },
 )
