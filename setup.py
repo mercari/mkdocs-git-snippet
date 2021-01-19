@@ -28,7 +28,6 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Mercari",
-    author_email="",
     url="https://github.com/mercari/mkdocs-git-snippet",
     python_requires=">=3.5",
     install_requires=generate_install_requires(),
