@@ -5,7 +5,7 @@ from distutils.command.upload import upload as upload_orig
 from setuptools import find_packages, setup
 from typing import List
 
-VERSION = "0.0.0"
+VERSION = "0.1.0"
 
 
 def generate_install_requires() -> List[str]:
