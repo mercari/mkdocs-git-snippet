@@ -21,6 +21,8 @@ def copy_markdown_images(root: str, file: str, repo: Repository, markdown: str) 
     paths = [result["path"] for result in parse.findall(template, markdown)]
     parent = Path(file).parent
     for path in paths:
+        if path.startswith("http"):
+            continue
         img_path = Path(parent / path).resolve().relative_to(Path(".").resolve())
 
         img = repo.get_contents(str(img_path))
