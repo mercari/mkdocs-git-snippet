@@ -5,7 +5,7 @@ from distutils.command.upload import upload as upload_orig
 from setuptools import find_packages, setup
 from typing import List
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 
 def generate_install_requires() -> List[str]:
@@ -24,9 +24,10 @@ def generate_install_requires() -> List[str]:
 setup(
     name="mkdocs-git-snippet",
     version=VERSION,
-    description="An MkDocs plugin that read snippet from Github Repository.",
+    description="An MkDocs plugin that reads snippets from Github Repositories.",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
     author="Mercari",
-    author_email="",
     url="https://github.com/mercari/mkdocs-git-snippet",
     python_requires=">=3.5",
     install_requires=generate_install_requires(),

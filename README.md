@@ -11,10 +11,8 @@ Mkdocs Plugin for snippet from git repository.
 ## Installation
 
 ```shell
-python setup.py install
+pip install mkdocs-git-snippet
 ```
-
-This package is not available from pypi now. We are working on that.
 
 ## Configuration
 
