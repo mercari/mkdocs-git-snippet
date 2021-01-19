@@ -79,6 +79,23 @@ class TestCopyMarkdownImages(object):
 
     @patch("os.makedirs")
     @patch("urllib.request.urlretrieve")
+    def test_url_images(self, *_):
+        markdown = textwrap.dedent(
+            """
+            # test
+            This section has an image.
+            ![img_name](http://original/img_path/img.png)
+            ## section2
+            This section has an image too.
+            ![img_name2](https://original2/img_path2/img2.png)
+            """
+        )
+        result = copy_markdown_images(self.root, self.file, self.repo, markdown)
+        expected = markdown
+        assert result == expected
+
+    @patch("os.makedirs")
+    @patch("urllib.request.urlretrieve")
     def test_no_image(self, *_):
         markdown = textwrap.dedent(
             """
