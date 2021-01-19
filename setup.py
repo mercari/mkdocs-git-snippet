@@ -24,7 +24,7 @@ def generate_install_requires() -> List[str]:
 setup(
     name="mkdocs-git-snippet",
     version=VERSION,
-    description="An MkDocs plugin that read snippet from Github Repository.",
+    description="An MkDocs plugin that reads snippets from Github Repositories.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Mercari",
