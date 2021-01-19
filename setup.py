@@ -25,6 +25,8 @@ setup(
     name="mkdocs-git-snippet",
     version=VERSION,
     description="An MkDocs plugin that read snippet from Github Repository.",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
     author="Mercari",
     author_email="",
     url="https://github.com/mercari/mkdocs-git-snippet",
