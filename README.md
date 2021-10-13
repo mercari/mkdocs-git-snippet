@@ -48,6 +48,10 @@ When `all_pages` is false, this plugin only works for the page that added `git-s
 ....
 ```
 
+### Acessing Private Repositories
+
+To add a snippet from a private repository set the `GITHUB_TOKEN` environment variable while building mkdocs documentation.
+
 ## Usage
 
 ### All files from default branch
