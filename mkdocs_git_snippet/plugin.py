@@ -3,7 +3,7 @@ import os
 import mkdocs
 from mkdocs.plugins import BasePlugin
 from jinja2 import Template
-from github import Github, GithubObject
+from github import Auth, Github, GithubObject
 
 from mkdocs_git_snippet.util import (
     skip_page,
@@ -20,7 +20,7 @@ class GitSnippetPlugin(BasePlugin):
     page = None
 
     def _git_snippet(self, repository: str, file: str, ref: str, section: str) -> str:
-        g = Github(os.getenv("GITHUB_TOKEN"))
+        g = Github(auth=Auth.Token(os.getenv("GITHUB_TOKEN")))
         repo = g.get_repo(repository)
         f = repo.get_contents(file, ref=ref)
         content = f.decoded_content.decode("utf-8")
